@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
 	<meta charset="utf-8" />
@@ -14,144 +14,45 @@
 	
 	<!-- Styles Styles -->
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
-
+    
 	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries -->
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<!--firebase-->
+	<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+
+	
 	
 	<!-- Web fonts -->
 	<link rel="stylesheet" type="text/css" href="fonts/MyFontsWebfontsOrderM4341110/MyFontsWebfontsOrderM4341110.css">		
 	<link href='http://fonts.googleapis.com/css?family=Lato:400%7COpen+Sans:400,400italic%7CMerriweather:300' rel='stylesheet' type='text/css'>
 </head>
-	<body>
+	<body ng-controller="AppCtrl">
 
 
-<div class="container ontop invisible"><div class="row"><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid"></div><div class="onecol grid last"></div></div></div>
 
-<div class="container feature ifpospwb">
-	<div class="row">	
-		<div id="logo">
-			<h1><a href="index.html">Ben Callis </a></h1>
-		</div>		
-		<nav>
-			<ul>
-				<li><a href="http://twitter.com/bencallis1">Twitter</a></li>
-				<li><a href="https://plus.google.com/+BenCallis1/">Google&#43;</a></li>
-				<li><a href="mailto:bencallis1@gmail.com">Email</a></li>
-			</ul>			
-		</nav>
 
-	</div>
-	
-	<div class="row">	
-		<div class="twelvecol">
-			<div class="headline">Ben Callis </div>
-			<div class="headline-bottom">Web Developer</div>
-		</div>
-	</div>
-</div>			
-<div class="container who">
-	<div class="row">
-		<div class="twelvecol">
-			<h2>About Me</h2>
-		</div>
-		<div class="twocol">
-			<!-- no content -->
-		</div>
-		<div class="eightcol">
-			<p>I&rsquo;m a front web developer, with a focus on Angularjs, JavaScript, HTML5, CSS3. I have a passion for building awesome web applications that will hopefully better the lives of others. If your looking for a dedicated front end developer look no further.   </p>
+<div class="app" id="app"  ui-view></div>
 
-		</div>
 
-		<div class="twocol last">
-			<div class="menu-button" id="open-button"><span aria-hidden="true" class="icon_menu"></span></div>
-		</div>
-	</div>	
-</div>
 
-<div class="container how">
-	<div class="row">
-		<div class="twelvecol">
-			<h2>How I do it</h2>
-		</div>
-		<div class="fourcol research">
-			<h3>Do My Homework</h3>
-			<p>Researching current trends and themes among the products I am developeing is key to implementing a design that is both functinal and easy to use. </p>
-		</div>
-		<div class="fourcol design">
-			<h3>Design</h3>
-			<p>Define and design the product. Combine smart interaction, interface, and visual design into a compelling product that resonates with the target audience.</p>
-		</div>
-		<div class="fourcol iterate last">
-			<h3>Refine</h3>
-			<p>Test concepts, designs, and prototypes with real users. Combine learnings with gut instinct and experience. Iterate and refine in pursuit of perfection.</p>
-		</div>
-	</div>
-</div>
+  <!-- Angular -->
+  <script src="vendor/angular/angular.js"></script>
+  
 
-<div class="container work">
-	<div class="row ">
-		<div class="twelvecol">
-			<h2>My Work</h2>
-		</div>
-	</div>
-	<div class="row project">
-			<div class="twelvecol">
-				
-				<h3>Photo Sharing, Meet Photojournalism</h3>
-				<p class="metadata">2012 &middot; self initiated &middot; web</p>
-				<p>A fun, self-initiated design project that explores how Flickr can evolve and bring unique value to the online photo community. Competing against Instagram, Facebook, and 500px, perhaps Flickr can grow beyond photo sharing and become the premier platform for crowd-sourced photojournalism. The UI, features, and functionality encourages visitors to contribute photos and help tell stories about locations, events, and people around the world.</p>
-			</div>
-	</div>	
-</div>
-	<div class="container how">
-	<div class="row">
-		<div class="twelvecol">
-			<h2>How I do it</h2>
-		</div>
-		<div class="fourcol research">
-			<h3>Do My Homework</h3>
-			<p>Researching current trends and themes among the products I am developeing is key to implementing a design that is both functinal and easy to use. </p>
-		</div>
-		<div class="fourcol design">
-			<h3>Design</h3>
-			<p>Define and design the product. Combine smart interaction, interface, and visual design into a compelling product that resonates with the target audience.</p>
-		</div>
-		<div class="fourcol iterate last">
-			<h3>Refine</h3>
-			<p>Test concepts, designs, and prototypes with real users. Combine learnings with gut instinct and experience. Iterate and refine in pursuit of perfection.</p>
-		</div>
-	</div>
-</div>
+<!-- Vendor -->
+  <script src="vendor/angular/angular-ui-router/angular-ui-router.js"></script> 
+  <script src="vendor/angular/ngstorage/ngStorage.js"></script>
 
-<div class="container contact">
-	<div class="row">
-		<div class="twelvecol">
-			<h2>Let&rsquo;s make the future</h2>
-			<span class="button_primary"><a href="mailto:bencallis1@gmail.com">Send me an email</a></span>
-		</div>
-	</div>
-</div>
+  <!-- App -->
+  <script src="js/app.js"></script>
+  <script src="js/AppCtrl.js"></script>
 
-<div class="container footer">
-	<div class="row">
-		<div class="twelvecol">
-			<footer class="footer">
-				<span class="left">&#169;2015 Dickson Fong</span>
-				<span class="right"><a href="index.html#top">Scroll to top</a></span>
-			</footer>
-		</div>
-	</div>
-</div>
+  
+  <script src="js/config.router.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function() {	            
-            $("a[href='#top']").click(function() {
-    			$("html, body").animate({ scrollTop: 0 }, 1500);
-   			return false;
-    });
-});
-</script>
+
+
+
 
 
 </body>

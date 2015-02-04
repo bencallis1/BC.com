@@ -1,0 +1,63 @@
+<div class="row project">
+		<div class="twelvecol">
+			
+			<h3>TV Reinvented</h3>
+			<p class="metadata">2012 &middot; self initiated &middot; TV</p>
+			<p>A self-initiated design project inspired by the television and second-screen experiences I&rsquo;ve had the pleasure of working on. My proposal integrates broadcast and streaming content into a 10-foot UI that is quickly navigated with a directional pad on a super simple remote control. Programming is curated in a <em>My Media</em> screen when logged into one&rsquo;s personal user profile, all displayed on the backdrop of stunning artwork.</p>
+		</div>
+	</div>	
+	<div class="row project">
+		<div class="twelvecol">
+			
+			<h3>Mobile Before It Was Cool</h3>
+			<p class="metadata">2010 &middot; Oakley &middot; web &middot; mobile</p>
+			<p>In 2010, Oakley.com was seeing an increasing number of visitors from mobile devices. Seeing an opportunity to increase conversion, I designed a mobile website that makes it easy to find and purchase products. Being the sole designer on this project, I completed research, interaction design, and UI design for Oakley/Luxottica&rsquo;s first mobile initiative.</p>
+		</div>
+	</div>
+</div>
+<nav>
+			<ul>
+				<li><a href="http://twitter.com/bencallis1">Twitter</a></li>
+				<li><a href="https://plus.google.com/+BenCallis1/">Google&#43;</a></li>
+				<li><a href="mailto:bencallis1@gmail.com">Email</a></li>
+			</ul>			
+		</nav>
+		<div class="eightcol">
+			<p>I&rsquo;m a front web developer, with a focus on Angularjs, JavaScript, HTML5, CSS3. I have a passion for building awesome web applications that will hopefully better the lives of others. If your looking for a dedicated front end developer look no further.   </p>
+
+		</div>
+<div class="twelvecol">
+			<h2>About Me</h2>
+		</div>
+		nav {
+width: 100%;
+float: left;
+border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+	nav ul {
+	display: inline-block;
+	float: right;
+	}
+	
+		nav ul li {
+		list-style: none;
+		float: right;
+		margin: 30px 0 30px 50px; margin: 1.875rem 0 1.875rem 3.125rem;
+		font-family: "Lato", Arial, sans-serif;
+		font-size: .8125em;
+		font-weight: 400;
+		text-transform: uppercase;
+		}
+		
+			nav ul li a,
+			nav ul li a:hover,
+			nav ul li a:visited {
+			color: #fff;
+			text-decoration: none;
+			transition: 0.2s ease;
+			}
+			
+			nav ul li a:hover {
+			opacity: .5;
+			}
