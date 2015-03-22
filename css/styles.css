@@ -505,8 +505,8 @@ p.metadata {
 
     .feature {
         background-size: cover;
-        background-attachment: scroll;
-        height: 650px;
+        background-attachment: fixed;
+        height: 830px;
         margin: 0;
     }
 
@@ -587,7 +587,7 @@ p.metadata {
     .feature {
 
         background-size: cover;
-        background-attachment: scroll;
+        background-attachment: fixed;
         height: 510px;
         margin: 0;
     }
